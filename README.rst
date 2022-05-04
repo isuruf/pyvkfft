@@ -12,7 +12,12 @@ Installation
 
 Install using ``pip install pyvkfft`` (works on macOS, Linux and Windows).
 
-Notes:
+If you are using conda, ``conda install pyvkfft -c conda-forge``
+(works on macOS, Linux and Windows). These are pre-built binaries with opencl (all platforms)
+and cuda backends (Linux and Windows only). Install either ``pycuda`` or ``cupy`` conda
+packages for the cuda backend.
+
+Notes for installing using pip:
 
 - the PyPI package includes ``vkfft.h`` and will automatically install ``pyopencl``
   if opencl is available. However you should manually install either ``cupy`` or ``pycuda``
